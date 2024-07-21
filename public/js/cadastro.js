@@ -68,7 +68,7 @@ function validarCamposTexto(){
     })
 }
  
-function enviarDados() {
+function cadastrarDados() {
     $("#botao").on("click", function() {
         let email = $('#inputEmail').val();
         let dataNascimento = $('#inputDataNascimento').val();
@@ -76,7 +76,6 @@ function enviarDados() {
         let celular = $('#inputCelular').val();
         let nome = $('#inputNome').val();
         let profissao = $('#inputProfissao').val();
-        console.log(typeof(dataNascimento))
         if (dataNascimento && email && telefone && celular && nome && profissao) {
             if (!validarDataNascimento()==true && !validarEmail()==true && !validarTelefone()==true && !validarCamposTexto()==true) {
                 const dados = {
@@ -116,6 +115,6 @@ function enviarDados() {
     });
 }
  
-enviarDados()
+cadastrarDados()
  
 
