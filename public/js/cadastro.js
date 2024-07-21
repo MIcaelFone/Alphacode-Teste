@@ -94,7 +94,7 @@ function enviarDados() {
                 });
                 console.log(dados);
                 $.ajax({
-                    url: 'http://127.0.0.1:8000/api/contato',
+                    url: 'http://localhost:8000/api/contato',
                     type: 'POST',
                     data: JSON.stringify(dados),
                     contentType: 'application/json',
