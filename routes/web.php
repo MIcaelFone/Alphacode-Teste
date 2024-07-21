@@ -16,5 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('cadastro.cadastro');
 });
+Route::get('/gerenciamento',function (){
+   return view('gerenciamento.gerenciamento');
+});
 
  
