@@ -19,5 +19,8 @@ Route::get('/', function () {
 Route::get('/gerenciamento',function (){
    return view('gerenciamento.gerenciamento');
 });
+Route::get('/editar/{id}',function (){
+    return view('editarcontato.editarcontato');
+});
 
  
