@@ -1,5 +1,4 @@
-
-function receberDados() {
+function buscarContatos() {
     $.ajax({
         url: 'http://localhost:8000/api/contato',
         type: 'GET',
@@ -29,11 +28,6 @@ function receberDados() {
         }
     });
 }
-function editarContato(){
-  $(document).on('click','.editar',function(e){
-    console.log("editar");
-  })  
-}
 function buscarContatoRemover(){
     $(document).on('click', '.remover', function() {
         let id = $(this).data('id');
@@ -43,7 +37,7 @@ function buscarContatoRemover(){
 function buscarContatoEditar(){
     $(document).on('click', '.editar', function() {
         let id = $(this).data('id');
-        window.location.href = `http://localhost:8000/editar/${id}`;
+        window.location.href = `/editar/${id}`;
     });    
 }
 function excluindoContato(id){
@@ -54,7 +48,7 @@ function excluindoContato(id){
             success: function() {
                 alert("Contato excluído com sucesso");
                 $("#exampleModal").modal('hide');
-                location.reload();
+                 
             },
             error: function(xhr) {
                 console.log(xhr.responseText);
@@ -63,6 +57,6 @@ function excluindoContato(id){
     })
 }
          
-receberDados();
+buscarContatos();
 buscarContatoRemover();
 buscarContatoEditar();
