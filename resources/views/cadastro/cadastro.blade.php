@@ -19,8 +19,8 @@
                 <x-input divclass="col-md-6" type="date" nome="dataNascimento" class="form-control" label="Data de nascimento" id="inputDataNascimento" placeholder="Digite sua data de nascimento" value=""/>
                 <x-input divclass="col-md-6" type="email" nome="email" class="form-control" label="E-mail" id="inputEmail" placeholder="Digite seu e-mail" value=""/>
                 <x-input divclass="col-md-6" type="text" nome="profissao" class="form-control" label="Profissão" id="inputProfissao" placeholder="Digite sua profissão" value=""/>
-                <x-input divclass="col-md-6" type="tel" nome="telefone" class="form-control" label="Telefone para contato" id="inputTelefone" placeholder="(xx)xxxx-xxxx" value=""/>
-                <x-input divclass="col-md-6" type="tel" nome="celular" class="form-control" label="Celular para contato" id="inputCelular" placeholder="(xx)xxxxx-xxxx" value=""/>
+                <x-input divclass="col-md-6" type="tel" nome="telefone" class="form-control" label="Telefone para contato" id="inputTelefone" placeholder="(xx)-xxxx-xxxx" value=""/>
+                <x-input divclass="col-md-6" type="tel" nome="celular" class="form-control" label="Celular para contato" id="inputCelular" placeholder="(xx)-xxxxx-xxxx" value=""/>
             </form>
         </div>
     </div>
@@ -37,9 +37,9 @@
             <x-input divclass="form-check" type="checkbox" class="form-check-input" nome="notificacao-Email" label="Enviar notificações por Email" id="inputNotificacaoEmail" value="" placeholder=""/>   
         </div>    
     </div>  
-        <div>
-            <button type="submit" class="btn btn-primary mt-4 botao" id="botao">Cadastrar</button>
-        </div>  
+        <div class="container d-flex justify-content-center">
+            <button type="button" class="btn btn-primary" id="botao">Cadastrar</button>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="{{ asset('js/cadastro.js') }}"></script>
     </body>
