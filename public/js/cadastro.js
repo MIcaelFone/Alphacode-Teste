@@ -110,7 +110,7 @@ function cadastrarDados() {
                 });
             }
         } else {
-            alert("Todos os campos são obrigatórios");
+            alert("Todos os campos são obrigatórios preencher");
         }
     });
 }
