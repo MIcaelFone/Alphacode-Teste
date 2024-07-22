@@ -53,11 +53,11 @@
     }
     
 
-    public function update(\App\Http\Requests\ContatoFormRequest $request, ContatoModel $contatos)
+    public function update(\App\Http\Requests\ContatoFormRequest $request, $id)
     { 
-        $contatos->fill($request->all());
-        $contats->save();
+        $contatos=ContatoModel::where('id', $id)->first();
         if($contatos){
+            $contato = $contatos->update($request->all());
             return response()->json(['status' => 'sucesso', 'message' => 'Contato atualizado com sucesso', 'data' => $contato], 200);
         }
         else{
