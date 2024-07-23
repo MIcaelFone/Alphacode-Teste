@@ -30,10 +30,16 @@ O projeto é um sistema completo de contatos de pessoas. Nessa aplicação, o us
 
 
 ## Para baixar o projeto, ápos configurar ter o computador configurado
- <uL>
-  <li>Primeiro abra um terminal ou prompt comandos e execute esse comando <code>git clone https://github.com/MIcaelFone/Alphacode-Teste.git</code></li>
-   Lembrando,para rodar o projeto, ele deve estar na pasta <code>htdocs</code> do XAMPP  
- </ul>
+ <ul>
+      <li>
+        Primeiro, abra um terminal ou prompt de comandos e execute o seguinte comando:
+        <code>git clone https://github.com/MIcaelFone/Alphacode-Teste.git</code>
+      </li>
+      <li>
+        Lembrando que, para rodar o projeto PHP, ele deve estar na pasta <code>htdocs</code> do XAMPP. Acesse o projeto através do navegador na URL <code>http://localhost/nome_do_projeto</code>.
+      </li>
+</ul>
+
 
 
 
