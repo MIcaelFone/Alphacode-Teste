@@ -33,7 +33,7 @@
 ## Passo a passo para configurar o banco de dados do projeto.
  <ol>
    <img src="https://github.com/user-attachments/assets/06a7cff5-4b8c-4e1f-94bc-430c30f24a41">
-   Localize e abra o arquivo .env na raiz do projeto.Configure as seguintes variáveis para definir a conexão com o banco de dados:
+  <li> Localize e abra o arquivo .env na raiz do projeto.Configure as seguintes variáveis para definir a conexão com o banco de dados</li>
     <li><strong>DB_CONNECTION</strong>: Define o tipo de banco de dados que você está usando. Para MySQL, use <code>mysql</code>. Se estiver usando outro banco de dados, ajuste conforme necessário.</li>
   <li><strong>DB_HOST</strong>: Define o endereço do servidor onde o banco de dados está hospedado. Normalmente, para um banco de dados local, use <code>127.0.0.1</code> ou <code>localhost</code>.</li>
   <li><strong>DB_PORT</strong>: Define a porta pela qual a conexão com o banco de dados será feita. Para MySQL, a porta padrão é <code>3306</code>.</li>
