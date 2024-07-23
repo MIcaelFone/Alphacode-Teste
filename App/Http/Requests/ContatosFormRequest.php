@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ContatoFormRequest extends FormRequest
+class ContatosFormRequest extends FormRequest
 {
     public function authorize()
     {
@@ -20,6 +20,9 @@ class ContatoFormRequest extends FormRequest
             'dataNascimento' => 'required|string',
             'celular' => 'required|string|max:15',
             'profissao' => 'required|string|max:100',
+            'celularPossuiWhatsapp'=> 'boolean',
+            'enviarNotificacaoEmail'=> 'boolean',
+            'enviarNotificacaoSms'=> 'boolean',
         ];
     }
 }

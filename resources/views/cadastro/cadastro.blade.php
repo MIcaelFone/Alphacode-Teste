@@ -27,14 +27,14 @@
     <div class="mt-5 permissoes">
         <div class="row">
             <div class="col">
-                <x-input divclass="form-check" type="checkbox" class="form-check-input" nome="numero_Whatsapp" label="Número de celular possui WhatsApp" id="inputNotificacao" value="" placeholder=""/>
+                <x-input divclass="form-check" type="checkbox" class="form-check-input" nome="numero_Whatsapp" label="Número de celular possui WhatsApp" id="inputcelularpossuiWhatsapp" value="" placeholder=""/>
             </div>
             <div class="col">
-                <x-input divclass="form-check" type="checkbox" class="form-check-input" nome="notificacao-SMS" label="Enviar notificações por SMS" id="inputNotificacaoSMS" value="" placeholder=""/>
+                <x-input divclass="form-check" type="checkbox" class="form-check-input" nome="notificacao_SMS" label="Enviar notificações por SMS" id="inputNotificacaoSMS" value="" placeholder=""/>
             </div>
         </div> 
         <div class="col">
-            <x-input divclass="form-check" type="checkbox" class="form-check-input" nome="notificacao-Email" label="Enviar notificações por Email" id="inputNotificacaoEmail" value="" placeholder=""/>   
+            <x-input divclass="form-check" type="checkbox" class="form-check-input" nome="notificacao_Email" label="Enviar notificações por Email" id="inputNotificacaoEmail" value="" placeholder=""/>   
         </div>    
     </div>  
         <div class="container d-flex justify-content-center">

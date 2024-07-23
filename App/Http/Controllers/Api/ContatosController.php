@@ -3,14 +3,14 @@
  namespace App\Http\Controllers\Api;
 
  use App\Http\Controllers\Controller;
- use App\Models\ContatoModel; // Ensure this import statement is correct
+ use App\Models\ContatosModel; // Ensure this import statement is correct
  use Illuminate\Http\Request;
  
  class ContatosController extends Controller 
 {
     public function index()
     {
-        $contatos = ContatoModel::all();
+        $contatos = ContatosModel::all();
         if ($contatos) {
             return response()->json(['status' => 'sucesso', 'message' => 'Contatos encontrados com sucesso', 'data' => $contatos], 200);
         } else {
@@ -18,7 +18,7 @@
         }
     }
 
-    public function store(\App\Http\Requests\ContatoFormRequest $request)
+    public function store(\App\Http\Requests\ContatosFormRequest $request)
     {   
         try {
             $request->validate([
@@ -28,9 +28,12 @@
                 'dataNascimento' => 'required|string',
                 'celular' => 'required|string',
                 'profissao' => 'required|string',
+                'celularPossuiWhatsapp'=> 'boolean',
+                'enviarNotificacaoEmail'=> 'boolean',
+                'enviarNotificacaoSms'=> 'boolean',
             ]);
 
-            $criando = ContatoModel::create($request->all());
+            $criando = ContatosModel::create($request->all());
 
             if ($criando) {
                 return response()->json(['status' => 'sucesso', 'message' => 'Contato criado com sucesso', 'data' => $criando], 201);
@@ -44,7 +47,7 @@
 
     public function show($id)
     {
-        $contato = ContatoModel::where("id", $id)->first();
+        $contato = ContatosModel::where("id", $id)->first();
         if ($contato) {
             return response()->json(['status' => 'sucesso', 'message' => 'Contato encontrado com sucesso', 'data' => $contato], 200);
         } else {
@@ -53,9 +56,9 @@
     }
     
 
-    public function update(\App\Http\Requests\ContatoFormRequest $request, $id)
+    public function update(\App\Http\Requests\ContatosFormRequest $request, $id)
     { 
-        $contatos=ContatoModel::where('id', $id)->first();
+        $contatos=ContatosModel::where('id', $id)->first();
         if($contatos){
             $contato = $contatos->update($request->all());
             return response()->json(['status' => 'sucesso', 'message' => 'Contato atualizado com sucesso', 'data' => $contato], 200);
@@ -67,7 +70,7 @@
 
     public function destroy($id)
     {
-        $contatos = ContatoModel::destroy($id);
+        $contatos = ContatosModel::destroy($id);
         if ($contatos) {
             return response()->json([], 204);
         } else {

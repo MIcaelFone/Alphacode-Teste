@@ -3,9 +3,9 @@
 
  use Illuminate\Database\Eloquent\Model;
 
-class ContatoModel extends Model
+class ContatosModel extends Model
 {
-    protected $table = 'contato';
+    protected $table = 'contatos';
 
     protected $fillable = [
         'nome',
@@ -14,6 +14,9 @@ class ContatoModel extends Model
         'dataNascimento',
         'celular',
         'profissao',
+        'celularPossuiWhatsapp',
+        'enviarNotificacaoEmail',
+        'enviarNotificacaoSms',
     ];
 
     // Optionally, define the primary key if it's not 'id'

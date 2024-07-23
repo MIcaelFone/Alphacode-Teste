@@ -18,6 +18,6 @@ use App\Http\Controllers\Api\ContatosController;
  
  
 
-Route::apiResource('/contato', ContatosController::class);
+Route::apiResource('/contatos', ContatosController::class);
 
 

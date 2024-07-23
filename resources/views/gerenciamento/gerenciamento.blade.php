@@ -22,8 +22,10 @@
                 <th scope="col">Celular</th>
                 <th scope="col">Data Nascimento</th>
                 <th scope="col">Profissão</th>
-                <th scope="col">Editar</th>
-                <th scope="col">Deletar</th>
+                <th scope="col"> Número possui WhatsApp?</th>
+                <th scope="col"> Enviar notificação por Email?</th>
+                <th scope="col"> Enviar notificação por SMS?</th>
+                <th scope="col">Ações</th>
             </tr>
             </thead>
             <tbody class="table-group-divider">
@@ -41,8 +43,8 @@
                  Deseja deletar esse contato?
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                 <button type="button" id="excluir" class="btn btn-outline-danger">Remover</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                 </div>
             </div>
             </div>
