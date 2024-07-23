@@ -30,7 +30,11 @@ O projeto é um sistema completo de contatos de pessoas. Nessa aplicação, o us
 
 
 ## Para baixar o projeto, ápos configurar ter o computador configurado
- ![image](https://github.com/user-attachments/assets/b0efaf33-c6b2-4e23-9024-82218e349884)
+ <uL>
+  <li>![image](https://github.com/user-attachments/assets/b0efaf33-c6b2-4e23-9024-82218e349884)</li>
+    Para rodar o projeto, ele deve estar na pasta <code>htdocs</code> do XAMPP  
+ </ul>
+
 
 
  
