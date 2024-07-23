@@ -15,7 +15,7 @@
 </ul>
 
 
-## Passo a passo para instalar o projeto.
+## Passo a Passo para Instalar e Abrir o Projeto
  <ol>
       <li>
         Primeiro, abra um terminal ou prompt de comandos e execute o seguinte comando:
