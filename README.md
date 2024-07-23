@@ -1,25 +1,11 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-
 </p>
 
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 ## Sobre o projeto 
 
-O projeto é um sistema completo de contatos de pessoas. Nessa aplicação, o usuário pode cadastrar diversos contatos e, assim, também pode alterar e deletá-los.
+ O projeto é um sistema completo de gerenciamento de contatos. Nesta aplicação, o usuário pode cadastrar diversos contatos, além de ter a capacidade de alterá-los e deletá-los conforme necessário. O sistema inclui uma página para cadastrar novos contatos e outra página para gerenciar os contatos existentes, permitindo a edição e exclusão dos mesmos.
 
 ## Antes de executar o projeto, é necessário garantir que o seu computador tenha os seguintes softwares instalados e configurados:
 <ul>
@@ -44,7 +30,7 @@ O projeto é um sistema completo de contatos de pessoas. Nessa aplicação, o us
       </li>
  </ol>
  
-## Passo a passo para instalar o projeto.
+## Passo a passo para configurar o banco de dados do projeto.
  <ol>
    <img src="https://github.com/user-attachments/assets/06a7cff5-4b8c-4e1f-94bc-430c30f24a41">
    <li> Quando entrar no projeto pelo editor ,configure o arquivo .env para criar o banco de dados em sua máquina.</li>
@@ -58,24 +44,11 @@ O projeto é um sistema completo de contatos de pessoas. Nessa aplicação, o us
   <li><strong>Criar Banco de Dados</strong>: Após iniciar os servidores, acesse o phpMyAdmin no navegador e crie o banco de dados com o nome especificado na variável <code>DB_DATABASE</code>.</li>   
  </ol> 
 
+## Passo a passo para iniciar o projeto
+<ol>
+     <li><strong>Rodar Migrações</strong>: Utilize o comando de migração do seu framework (por exemplo, <code>php artisan migrate</code> para Laravel) para criar as tabelas e estruturas definidas em suas migrações dentro do banco de dados criado.</li>
+    <li><strong>Iniciar o Servidor de Aplicação</strong>: Execute o servidor de aplicação do seu projeto para iniciar o ambiente de desenvolvimento. Por exemplo, para Laravel, use <code>php artisan serve</code>.</li>
+  <li><strong>Pegar o Link</strong>: Após iniciar o servidor de aplicação, pegue o link gerado para acessar seu projeto. Normalmente, será algo como <code>http://localhost:8000</code> para Laravel.</li>
+</ol>
 
-        
 
-    
-
-
-
-
-
- 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
