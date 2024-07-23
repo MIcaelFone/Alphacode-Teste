@@ -21,17 +21,17 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 O projeto é um sistema completo de contatos de pessoas. Nessa aplicação, o usuário pode cadastrar diversos contatos e, assim, também pode alterar e deletá-los.
 
-## Antes de executar o projeto precisa ter instalado e configurado:
+## Antes de executar o projeto, é necessário garantir que o seu computador tenha os seguintes softwares instalados e configurados:
 <ul>
     <li> [Composer](https://getcomposer.org.)</li>
-    <li> [PHP](https://getcomposer.org.) Versão posterioor </li>
+    <li> [PHP](https://getcomposer.org.) Versão 7.2.5 ou superior </li>
+    <li> [Xammp](https://www.apachefriends.org) </li>
 </ul>
 
 
-## Contributing
+## Para baixar o projeto ápos configurar ter o computador configurado
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
+ 
 ## Code of Conduct
 
 In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
