@@ -29,16 +29,36 @@ O projeto é um sistema completo de contatos de pessoas. Nessa aplicação, o us
 </ul>
 
 
-## Para baixar o projeto, ápos configurar ter o computador configurado
- <ul>
+## Passo a passo para instalar o projeto.
+ <ol>
       <li>
         Primeiro, abra um terminal ou prompt de comandos e execute o seguinte comando:
         <code>git clone https://github.com/MIcaelFone/Alphacode-Teste.git</code>
+        Lembrando que, para rodar o projeto PHP, ele deve estar na pasta <code>htdocs</code> do XAMPP.
       </li>
       <li>
-        Lembrando que, para rodar o projeto PHP, ele deve estar na pasta <code>htdocs</code> do XAMPP. Acesse o projeto através do navegador na URL <code>http://localhost/nome_do_projeto</code>.
+         Após ter baixado o projeto, execute o comando <code> cd Alphacode-Teste</code> na  pasta htdocs.
+      </li>  
+      <li>
+          Agora ao entrar na pasta Alphacode-Teste execute o comando <code> code .</code> para abrir um editor com o projeto.
       </li>
-</ul>
+ </ol>
+## Passo a passo para configurar o banco de dados 
+ <ol>
+     ![image](https://github.com/user-attachments/assets/06a7cff5-4b8c-4e1f-94bc-430c30f24a41) 
+   <li> Quando entrar no projeto pelo editor ,configure o arquivo .env para criar o banco de dados em sua máquina.</li>
+    <li><strong>DB_CONNECTION</strong>: Define o tipo de banco de dados que você está usando. Para MySQL, use <code>mysql</code>. Se estiver usando outro banco de dados, ajuste conforme necessário.</li>
+  <li><strong>DB_HOST</strong>: Define o endereço do servidor onde o banco de dados está hospedado. Normalmente, para um banco de dados local, use <code>127.0.0.1</code> ou <code>localhost</code>.</li>
+  <li><strong>DB_PORT</strong>: Define a porta pela qual a conexão com o banco de dados será feita. Para MySQL, a porta padrão é <code>3306</code>.</li>
+  <li><strong>DB_DATABASE</strong>: Define o nome do banco de dados que você deseja criar e utilizar. Substitua <code>contatosDB</code> pelo nome desejado para seu banco de dados.</li>
+  <li><strong>DB_USERNAME</strong>: Define o nome de usuário para se conectar ao banco de dados. O padrão para MySQL é <code>root</code>, mas você pode usar um usuário específico se preferir.</li>
+  <li><strong>DB_PASSWORD</strong>: Define a senha para o usuário do banco de dados. Se o banco de dados requer uma senha, insira-a aqui. Deixe em branco se não houver senha configurada.</li>  
+ </ol>  
+
+        
+
+    
+
 
 
 
