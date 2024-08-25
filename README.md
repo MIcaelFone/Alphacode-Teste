@@ -85,4 +85,4 @@ Execute o servidor de aplicação com o comando:
 php artisan serve
 ```
 ## 3. 🌐 Acessar o Projeto
-Abra o navegador e acesse o link gerado, que normalmente será:<code> http://localhost:8000 </code>
+Abra o navegador e acesse o link gerado, que normalmente será: http://localhost:8000  
