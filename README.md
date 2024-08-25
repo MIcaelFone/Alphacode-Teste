@@ -27,6 +27,13 @@ Antes de executar o projeto, certifique-se de que seu computador possui os segui
 - [PHP](https://www.php.net) versão 7.2.5 ou superior ![PHP Icon](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 - [XAMPP](https://www.apachefriends.org) ![XAMPP Icon](https://img.shields.io/badge/XAMPP-FB7A24?style=for-the-badge&logo=apache&logoColor=white)
 
+## 📚 Bibliotecas Utilizadas
+
+O projeto utiliza as seguintes bibliotecas e frameworks:
+
+- [Bootstrap](https://getbootstrap.com) ![Bootstrap Icon](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white): Framework CSS para estilização e layout responsivo.
+- [Laravel](https://laravel.com) ![Laravel Icon](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white): Framework PHP para o desenvolvimento web.
+  
 ## 🏗️ Passo a Passo para Instalar e Executar o Projeto
 
 ### 1. 🛠️ Clonar o Repositório
