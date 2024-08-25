@@ -35,3 +35,54 @@ Abra um terminal e execute o seguinte comando para clonar o repositório:
 
 ```bash
 git clone https://github.com/MIcaelFone/Alphacode-Teste.git
+```
+
+### 2. 📂 Acessar o Diretório do Projeto
+
+Abra um terminal e execute o seguinte comando para clonar o repositório:
+
+```bash
+git clone https://github.com/MIcaelFone/Alphacode-Teste.git
+```
+### 3. 🖥️ Abrir o Projeto em um Editor de Código
+   
+Se você usa o Visual Studio Code, por exemplo, pode abrir o projeto com o comando
+
+```bash
+ code .
+```
+## ⚙️ Configuração do Banco de Dados
+
+### 1. 🔧 Configurar o Arquivo .env
+Localize e abra o arquivo .env na raiz do projeto. Configure as seguintes variáveis para definir a conexão com o banco de dados:
+
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=contatosDB
+DB_USERNAME=root
+DB_PASSWORD=sua_senha_aqui
+```
+
+### 2. 🖥️ Iniciar Servidores no XAMPP
+Certifique-se de iniciar os servidores MySQL e Apache no XAMPP.
+
+### 3. 🏗️ Criar o Banco de Dados
+Acesse o phpMyAdmin no navegador e crie o banco de dados com o nome especificado na variável DB_DATABASE.
+
+## 🚀 Iniciar o Projeto
+
+### 1. 🔄 Rodar as Migrações
+Utilize o comando de migração do Laravel para criar as tabelas no banco de dados:
+
+```bash
+php artisan migrate
+```
+## 2. 🚀 Iniciar o Servidor de Aplicação
+Execute o servidor de aplicação com o comando:
+```bash
+php artisan serve
+```
+## 3. 🌐 Acessar o Projeto
+Abra o navegador e acesse o link gerado, que normalmente será:<code> http://localhost:8000 </code>
